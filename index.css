@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background: black;
+    color: white;
+    padding: 15px;
+}
+
+#controls {
+    padding: 10px;
+}
+
+.padding {
+    padding: 10px;
+}
