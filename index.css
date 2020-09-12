@@ -15,3 +15,15 @@ nav {
 .padding {
     padding: 10px;
 }
+
+.danger {
+    background: red;
+    color: white;
+    border: 1px grey solid;
+    border-radius: 4px;
+    padding: 2.3px;
+}
+
+.border {
+    border: 1px black solid;
+}

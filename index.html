@@ -10,15 +10,23 @@
 
 <body>
     <nav>Bands</nav>
-    <div id="stats">
-        <h1 class="padding"><span id="count">0</span> Rubber Bands</h1>
+    <div id="stats" class="padding">
+        <h3>Stats</h3>
+        <h4 class="border">Rubber Bands:<br><span id="count">0</span></h4>
+        <h4 class="border">Rubber:<br><span id="rubberStock">0</span> inches</h4>
     </div>
-    <div id="controls">
+    <div id="controls" class="padding">
+        <h3>Controls</h3>
         <button onclick="produce(1)">Produce Rubber Band</button>
-        <button onclick="save()">Save</button>
+        <button onclick="buy()">Buy Rubber</button>
+        <button onclick="sell()">Sell All Rubber Bands</button>
+        <button onclick="save(0)">Save</button>
+        <button class="danger" onclick="reset()">Reset Progress</button>
     </div>
-    <div id="upgrades">
-
+    <div id="upgrades" class="padding">
+        <h3>Upgrades</h3>
+        <p><button onclick="buyBot()">Buy Bot</button> - Produces 0.5 rubber bands a second.</p>
+        <p><button onclick="buyBlender()">Buy Blender</button> - Produces 1 rubber band a second.</p>
     </div>
     <script src="/index.js"></script>
 </body>
