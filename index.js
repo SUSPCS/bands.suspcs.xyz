@@ -33,6 +33,7 @@ function produce(amount) {
     }
     currentCount = eval(document.getElementById("count").innerHTML)
     countElem.innerHTML = currentCount + amount
+    document.getElementById("money").innerHTML = eval(localStorage.getItem("money"))
     subtractRubber(amount * 2)
     save(0)
 }
