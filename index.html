@@ -9,18 +9,19 @@
 </head>
 
 <body>
-    <nav>Bands</nav>
+    <nav>Bands | <a style="color: white; text-decoration: underline;"
+            href="https://github.com/suspcs/rubberbands.suspcs.xyz" target="_blank">Open-source</a></nav>
     <div id="stats" class="padding">
         <h3>Stats</h3>
         <h4 class="border">Rubber Bands:<br><span id="count">0</span></h4>
-        <h4 class="border">Rubber:<br><span id="rubberStock">0</span> inches</h4>
+        <h4 class="border">Rubber (40¢ an inch):<br><span id="rubberStock">0</span> inches</h4>
         <h4 class="border">Money:<br>$<span id="money">0</span></h4>
     </div>
     <div id="controls" class="padding">
         <h3>Controls</h3>
         <button onclick="produce(1)">Produce Rubber Band</button>
         <button onclick="buy()">Buy Rubber</button>
-        <button onclick="sell()">Sell All Rubber Bands</button>
+        <button onclick="sell()">Sell All Rubber Bands ($1 per band)</button>
         <button onclick="save(0)">Save</button>
         <button class="danger" onclick="reset()">Reset Progress</button>
     </div>

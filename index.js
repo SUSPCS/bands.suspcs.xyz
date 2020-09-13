@@ -93,7 +93,7 @@ function addRubber(inches) {
 
 function buy() {
     var amount = prompt("How much rubber should we buy?")
-    if (eval(amount) == "" || !amount) {
+    if (eval(amount) == "" || !amount || isNaN(amount)) {
         return stop("Please input an amount to buy.");
     } else {
         if (!localStorage.getItem("money") || localStorage.getItem("money") < rubberCost * amount) {
