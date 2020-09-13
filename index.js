@@ -23,6 +23,7 @@ function update() {
 }
 
 function setup() {
+    console.log("welcome, make some rubber and have a great day! keep an eye on here because we might make this a competition in the future!")
     document.getElementById("botPrice").innerHTML = botPrice
     document.getElementById("blenderPrice").innerHTML = blenderPrice
     if (!localStorage.getItem("newGame")) {
@@ -50,6 +51,7 @@ setInterval(function () {
 
 // produce rubber bands
 function produce(amount, alertOrNo) {
+    console.log("cheater")
     if (isNaN(localStorage.getItem("rubberStock"))) {
         localStorage.setItem("rubberStock", 0)
     }
