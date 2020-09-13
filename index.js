@@ -146,7 +146,11 @@ function stop(message) {
 
 function sell() {
     var amount = eval(document.getElementById("count").innerHTML)
-    localStorage.setItem("money", eval(localStorage.getItem("money")) + amount * 1)
-    localStorage.setItem("count", 0)
-    update()
+    if (!amount || amount == 0) {
+        return alert("Nothing to sell!")
+    } else {
+        localStorage.setItem("money", eval(localStorage.getItem("money")) + amount * 1)
+        localStorage.setItem("count", 0)
+        update()
+    }
 }
